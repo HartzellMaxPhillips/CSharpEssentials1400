@@ -7,3 +7,13 @@
 //Add another class with any name, add variables 
 //Using the new keyword create several objects
 //Console writeline the Objects variables
+
+using System;
+
+class Program {
+    public void main {
+
+    }
+}
+
+public class 

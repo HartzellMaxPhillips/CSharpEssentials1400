@@ -49,3 +49,5 @@ public class Weapon {
 public class PowerUp {
 	public float powerLevel = 2.5f;
 }
+
+//I am now working on the MyClass.cs code.  I will copy and paste the code from there to here.
