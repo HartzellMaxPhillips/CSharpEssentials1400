@@ -1,6 +1,7 @@
 //This is where I'll be keeping track of attempts to practice code and work on homework.
 //As a general statement I've been doing some before I started documenting in here.  
 //I'm making an attempt to make Hello World print out.
+//I should note that a lot of the links in the excersizes portion of the Module just straight up didn't work, so I've been improvising.  I hope it's good enough.  
 
 using system;
 

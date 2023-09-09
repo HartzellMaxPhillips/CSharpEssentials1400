@@ -10,10 +10,12 @@
 
 using System;
 
-class Program {
-    public void main {
-
+public class Program {
+    public void Main() {
+    string myName = "Max";
+    int myAge = 27;
+    Console.WriteLine("My name is " + myName + " and my name is " + myAge);
     }
 }
 
-public class 
+public class speed
