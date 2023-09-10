@@ -19,6 +19,7 @@ public class Program
         //So now they're so mad that they can fly.
         bool flying = true;
 
+        //writing out the variables as requested.
         Console.WriteLine ("Ward Cookies Before: " +cookiesWard);
         Console.WriteLine ("Phillips Cookies Before: " +cookiesPhillips);
         Console.WriteLine ("Ward Cookies After" +cookiesW);
