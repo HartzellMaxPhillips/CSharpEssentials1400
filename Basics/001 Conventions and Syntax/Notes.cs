@@ -51,4 +51,5 @@ public class PowerUp {
 	public float powerLevel = 2.5f;
 }
 
-//I am now working on the MyClass.cs code.  I will copy and paste the code from there to here.
+//I am now working on the MyClass.cs code.
+//Currently going through and fixing code so it works.  
