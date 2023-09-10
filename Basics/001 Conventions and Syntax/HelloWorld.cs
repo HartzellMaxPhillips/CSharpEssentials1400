@@ -2,7 +2,7 @@
 //Make sure your work is different from the instructors examples or your peers
 using System;
 
-public class HelloWorld
+public class Program
 {
     public static void Main(string[] args)
     {
