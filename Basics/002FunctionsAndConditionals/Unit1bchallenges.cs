@@ -42,3 +42,85 @@ public class WeatherAdvisory { //A class that could hold multiple functions but 
 	}
 
 }
+
+//Everything below here will be challenge 2
+/* Expand the "Exam Grader" program from the lab assignment. 
+In addition to displaying the grade based on the exam score, prompt the user to enter their favorite subject. 
+Use a switch statement to display a message related to their chosen topic. 
+For example, if the issue is "Math," show a message encouraging them to keep practicing and exploring mathematical concepts. 
+Customize the messages for different subjects and make it fun and encouraging.*/
+
+using System;
+
+public class Program //Standard stuff
+{
+    public ExamReader myExamReader;  //Calling from the call ExamReader
+	public SubjectMatter mySubjectMatter;	
+	
+    public void Main ()
+    {
+        myExamReader = new ExamReader(); //Setting up ExamReader to be used in the running program
+		mySubjectMatter = new SubjectMatter();
+
+        myExamReader.gradeTest(95); //Calling the class and then specifying  which function within the class
+        myExamReader.gradeTest(85);
+		mySubjectMatter.checkSubject();
+		
+}
+
+public class SubjectMatter 
+{
+	public enum Subjects 
+	{
+		Math, Reading, Writing, Science, 
+	}  
+	public void checkSubject () 
+	{
+		Console.WriteLine("Which subject among Math, Reading, Writing, and Science, is your favorite? 1 for Math, 2 for Reading, 3 for Writing, and 4 for Science");
+		int currentSubject = Convert.ToInt32(Console.ReadLine()); 
+	
+		switch (currentSubject) 
+		{
+			case 1:
+				Console.WriteLine("Remember to practice your math and do your homework on time to be successful!");
+				break;
+			case 2:
+				Console.WriteLine("Find lots of books that your interested in that are of your grade level and maybe even some that are slightly higher!");
+				break;
+			case 3:
+				Console.WriteLine("Write a variety of things such as poems, books, short stories, and essays.  You got this!");
+				break;
+			case 4:
+				Console.WriteLine("Learn as many facts as you can about observational science and the scientific method!");
+				break;
+		}
+	}
+}
+
+
+public class ExamReader 
+{  //Class to hold our function
+    public void gradeTest (int grade) 
+	{ //Function along with the integer needed
+        if (grade >= 90 && grade <= 100) 
+		{ //Had to use && for the "and" comparison.  Just a fun thing I learned making this.  
+            Console.WriteLine("You're grade is an A");
+        } else if (grade >= 80 && grade < 90) 
+		{
+            Console.WriteLine("You're grade is an B");
+        } else if (grade >= 70  && grade < 80)
+		{
+            Console.WriteLine("You're grade is an C");
+        } else if (grade >= 60 && grade < 70)
+		{
+            Console.WriteLine("You're grade is an D");
+        } else if (grade < 60 && grade >= 0)
+		{
+            Console.WriteLine("You're grade is an F");
+        } else if (grade > 100 || grade < 0)
+		{
+			Console.WriteLine("Invalid Input");
+		}
+    }
+}
+}
