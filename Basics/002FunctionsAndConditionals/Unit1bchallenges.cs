@@ -6,26 +6,26 @@ using System;
 
 public class Program  //Here and above along with the coresponding brackets is required to run
 {
-    public TempReader myTempReader; //Pulling The function so it's useable by Main
+    public WeatherAdvisory myWeatherAdvisory; //Pulling The function so it's useable by Main
 
     public void Main() 
     {
-        myTempReader = new TempReader();
+        myWeatherAdvisory = new WeatherAdvisory();
      	
-		myTempReader.tempTaker(45); //Passing a variable into the tempTaker function to give it something to work with.
-		myTempReader.tempTaker(35);
-		myTempReader.tempTaker(25);
-		myTempReader.tempTaker(15);
-		myTempReader.tempTaker(5);
-		myTempReader.tempTaker(-5);
+		myWeatherAdvisory.tempTaker(45); //Passing a variable into the tempTaker function to give it something to work with.
+		myWeatherAdvisory.tempTaker(35);
+		myWeatherAdvisory.tempTaker(25);
+		myWeatherAdvisory.tempTaker(15);
+		myWeatherAdvisory.tempTaker(5);
+		myWeatherAdvisory.tempTaker(-5);
 
     }
 }
 
-public class TempReader { //A class that could hold multiple functions but is just going to hold one for now.
+public class WeatherAdvisory { //A class that could hold multiple functions but is just going to hold one for now.
     public void tempTaker(int temperature)//Here is the beginning of the function with an if statement as requested by the challenge.
 	{	
-		if (temperature >= 40) {
+		if (temperature >= 40) { //Else if statements used for greater variety in advice.
 			Console.WriteLine ("Heat Advisory, it is extremely hot outside.  stay indoors if possible.");
 		}  else if(temperature > 30) {
 			Console.WriteLine ("It's hot outside, stay hydrated and avoid staying in the sun too long.");
